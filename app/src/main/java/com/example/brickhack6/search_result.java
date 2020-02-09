@@ -6,16 +6,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 
 import java.util.ArrayList;
 
-public class home extends AppCompatActivity {
-
+public class search_result extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
-    Button btn;
 
     private ArrayList<String> mName = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
@@ -23,18 +19,8 @@ public class home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-
-        btn = findViewById(R.id.addToList);
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        setContentView(R.layout.activity_search_result);
     }
-
     private void initImageBitmaps(){
         Log.d(TAG, "Preparing Bitmaps");
 
@@ -45,7 +31,7 @@ public class home extends AppCompatActivity {
 
     private void initRecyclerView(){
         Log.d(TAG, "Recycler View");
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         RecyclerView recyclerView = findViewById(R.id.recycleViewforSearch);
         recyclerView.setLayoutManager(layoutManager);
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this,mName,mImageUrls);

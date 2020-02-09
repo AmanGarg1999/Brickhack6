@@ -1,5 +1,6 @@
 package com.example.brickhack6;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,15 +18,14 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
-
-    private static final String TAG = "RecyclerViewAdapter";
+public class RecyclerViewAdapterForSerach extends RecyclerView.Adapter<RecyclerViewAdapterForSerach.ViewHolder>{
+    private static final String TAG = "RecyclerViewAdapterForSearch";
 
     private ArrayList<String> mnames = new ArrayList<>();
     private ArrayList<String> mimagesUrls = new ArrayList<>();
     private Context mContext;
 
-    public RecyclerViewAdapter(Context context, ArrayList<String> names, ArrayList<String> imgUrls){
+    public RecyclerViewAdapterForSerach(Context context, ArrayList<String> names, ArrayList<String> imgUrls){
         mnames = names;
         mimagesUrls = imgUrls;
         mContext = context;
@@ -33,7 +33,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @NonNull
-    @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
 
@@ -41,7 +40,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return new ViewHolder(view);
     }
 
-    @Override
+    @SuppressLint("LongLogTag")
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         Log.d(TAG, "onCreateViewHolder: called.");
 
@@ -61,7 +60,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     }
 
-    @Override
     public int getItemCount() {
         return mimagesUrls.size();
     }
@@ -73,9 +71,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            image = itemView.findViewById(R.id.img_have);
-            name = itemView.findViewById(R.id.name_have);
+            image = itemView.findViewById(R.id.img_search);
+            name = itemView.findViewById(R.id.name_search);
         }
     }
-
 }
