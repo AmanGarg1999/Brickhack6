@@ -8,11 +8,11 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="223dp"
-        android:layout_height="52dp"
+        android:layout_width="139dp"
+        android:layout_height="43dp"
         android:text="Corona Premium"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="138dp" />
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="123dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -91,6 +91,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CART"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="62dp" />
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="155dp"
+        android:layout_height="68dp"
+        app:srcCompat="@drawable/corona_premium"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="113dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
