@@ -10,95 +10,140 @@
         android:id="@+id/textView6"
         android:layout_width="139dp"
         android:layout_height="43dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="36dp"
         android:text="Corona Premium"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="123dp" />
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="3dp"
         android:text="AF001111"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="198dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="16 FL.OZ"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.128" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="36dp"
         android:layout_height="26dp"
         android:text="-"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="32dp"
         android:layout_height="24dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
         android:text="2"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="39dp"
         android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
         android:text="+"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="212dp"
         android:text="10.00 USD"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="275dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="145dp"
         android:layout_height="32dp"
+        android:layout_marginTop="344dp"
         android:text="TOTAL 20.00 USD"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="141dp"
         android:layout_height="19dp"
         android:text="Taxes Not Included"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="476dp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="52dp"
-        android:layout_height="22dp"
-        android:text="BUY"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="520dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:text="CART"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="31dp" />
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="155dp"
         android:layout_height="68dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/corona_premium"
-        tools:layout_editor_absoluteX="29dp"
         tools:layout_editor_absoluteY="113dp" />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUY"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="567dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,11 +8,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        app:cardCornerRadius="3dp"
-        app:cardMaxElevation="2dp"
-        app:cardElevation="1dp"
         android:layout_centerInParent="true"
-        >
+        android:layout_centerVertical="false"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp">
 
         <RelativeLayout
             android:layout_width="match_parent"

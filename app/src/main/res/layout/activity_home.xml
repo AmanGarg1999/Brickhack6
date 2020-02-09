@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="241dp"
         android:layout_below="@+id/imageView2"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="32dp"
         android:orientation="horizontal">
 
     </androidx.recyclerview.widget.RecyclerView>
@@ -31,10 +31,30 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="93dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="131dp"
         android:text="Add" />
+
+    <Button
+        android:id="@+id/hist_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="78dp"
+        android:text="View History" />
+
+    <Button
+        android:id="@+id/exp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="26dp"
+        android:text="View Expense" />
 
 </RelativeLayout>
