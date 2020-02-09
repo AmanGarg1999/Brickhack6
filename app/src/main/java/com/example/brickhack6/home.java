@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,6 +32,8 @@ public class home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intent = new Intent(home.this, getInfo.class);
+                startActivity(intent);
             }
         });
     }
@@ -46,7 +49,7 @@ public class home extends AppCompatActivity {
     private void initRecyclerView(){
         Log.d(TAG, "Recycler View");
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        RecyclerView recyclerView = findViewById(R.id.recycleViewforSearch);
+        RecyclerView recyclerView = findViewById(R.id.recycleView);
         recyclerView.setLayoutManager(layoutManager);
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this,mName,mImageUrls);
         recyclerView.setAdapter(adapter);
