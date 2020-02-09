@@ -8,25 +8,36 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="150dp"
-        android:layout_height="26dp"
+        android:layout_width="152dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
         android:text="Expense"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="68dp" />
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/expense"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.524"
+        app:srcCompat="@drawable/expense" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/spending_by_category"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="190dp" />
+        android:layout_marginBottom="472dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/spending_by_category" />
 </androidx.constraintlayout.widget.ConstraintLayout>

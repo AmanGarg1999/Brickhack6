@@ -1,6 +1,7 @@
 package com.example.brickhack6;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +40,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.alc_object_list, parent, false);
         return new ViewHolder(view);
+
     }
 
     @Override
@@ -51,13 +53,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 .into(holder.image);
         holder.name.setText(mnames.get(position));
 
-        holder.image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "onClick: clicked on img" + mnames.get(position));
-                Toast.makeText(mContext, mnames.get(position),Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
     }
 

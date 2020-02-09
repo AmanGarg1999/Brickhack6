@@ -19,6 +19,7 @@ public class home extends AppCompatActivity {
     Button btn;
     Button view_hist;
     Button view_est;
+    Button show;
 
     private ArrayList<String> mName = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
@@ -33,6 +34,8 @@ public class home extends AppCompatActivity {
         btn = findViewById(R.id.addToList);
         view_est = findViewById(R.id.exp_btn);
         view_hist = findViewById(R.id.hist_btn);
+
+        show = findViewById(R.id.show);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +60,14 @@ public class home extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(home.this, View_history.class);
+                startActivity(intent);
+            }
+        });
+
+        show.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home.this, descriptionpage.class);
                 startActivity(intent);
             }
         });
